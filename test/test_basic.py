@@ -6,6 +6,7 @@ import rubenesque.curves
 secp256r1 = rubenesque.curves.find('secp256r1')
 
 
+
 def test_point_addition():
     point_p1 = secp256r1.generator() * secp256r1.private_key()
     point_p2 = -point_p1
